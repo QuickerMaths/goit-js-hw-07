@@ -26,14 +26,6 @@ let lightbox = new SimpleLightbox(".gallery li a", {
   captionDelay: 250,
 });
 
-lightbox.on("show.simplelightbox", () => {
-  galleryEl.addEventListener("keydown", (e) => {
-    if (e.code === "Escape") {
-      lightbox.close();
-    }
-  });
-});
-
 galleryEl.addEventListener("click", (e) => {
   e.preventDefault();
 });
