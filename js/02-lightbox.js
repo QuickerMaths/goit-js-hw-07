@@ -19,13 +19,7 @@ for (const image of galleryItems) {
   galleryEl.addEventListener("click", (e) => e.preventDefault());
 }
 
-galleryEl.insertAdjacentHTML("beforeend", galleryEl);
-
 let lightbox = new SimpleLightbox(".gallery li a", {
   captionsData: "alt",
   captionDelay: 250,
-});
-
-galleryEl.addEventListener("click", (e) => {
-  e.preventDefault();
 });
